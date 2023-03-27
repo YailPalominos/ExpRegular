@@ -8,6 +8,12 @@ import java.awt.Color;
 
 public class Ejecucion {
 
+    // Ejemplos
+    // Circulo o Linea (1,3)(4,5)-(3)-(255,0,0)
+    // Triangulo (88,45)(5,53)(10,10)-(3)-(255,0,0)
+    // Cuadrado (1,1)(1,3)(3,3)(3,1)-(2)-(255,255,255)
+    // Rectangulo (1,3)(3,1)(1,1)(3,1)-(1)-(255,255,255)
+
     // Constructor
     public Ejecucion() {
 
@@ -56,26 +62,26 @@ public class Ejecucion {
                 double dDistanciaLinea4 = Distancia(oFiguras.nPosX[3], oFiguras.nPosY[3], oFiguras.nPosX[0],
                         oFiguras.nPosY[0]);
 
-                System.out.print("Calculos --------------------------------");
-                System.out.print("Distancia de la linea 1 = " + dDistanciaLinea1);
-                System.out.print("Distancia de la linea 2 = " + dDistanciaLinea2);
-                System.out.print("Distancia de la linea 3 = " + dDistanciaLinea3);
-                System.out.print("Distancia de la linea 4 = " + dDistanciaLinea4);
-                System.out.print("-----------------------------------------");
+                System.out.println("Calculos --------------------------------");
+                System.out.println("Distancia de la linea 1 = " + dDistanciaLinea1);
+                System.out.println("Distancia de la linea 2 = " + dDistanciaLinea2);
+                System.out.println("Distancia de la linea 3 = " + dDistanciaLinea3);
+                System.out.println("Distancia de la linea 4 = " + dDistanciaLinea4);
+                System.out.println("-----------------------------------------");
 
                 if (dDistanciaLinea1 == dDistanciaLinea2 && dDistanciaLinea2 == dDistanciaLinea3
                         && dDistanciaLinea3 == dDistanciaLinea4 && dDistanciaLinea4 == dDistanciaLinea1) {
 
                     System.out.println("Cuadrado");
 
-                } else if (dDistanciaLinea1 == dDistanciaLinea3 && dDistanciaLinea2 == dDistanciaLinea4 ||
-                        dDistanciaLinea1 == dDistanciaLinea3 && dDistanciaLinea2 == dDistanciaLinea4) {
+                } else if (dDistanciaLinea1 == dDistanciaLinea4 && dDistanciaLinea2 == dDistanciaLinea3 ||
+                        dDistanciaLinea1 == dDistanciaLinea3 && dDistanciaLinea4 == dDistanciaLinea2) {
 
                     System.out.println("Rectangulo");
 
                 } else {
 
-                    System.err.println("Las cordenadas no generan correctamente ningula figura");
+                    System.err.println("Las cordenadas no generan correctamente ninguna figura");
 
                 }
                 break;
