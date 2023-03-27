@@ -13,7 +13,6 @@ public class Validacion {
     // Variables de validación
     String sCadena;
     // Expreción regular para validar las cadenas
-
     // Exprecion original =
     // (^(\(\d{1,2},\d{1,2}\)){2,4})+-+\([1-3]\)+-+\((25[0-5]|2[0-4]\d|1\d{1,2}|\d{1,2}),(25[0-5]|2[0-4]\d|1\d{1,2}|\d{1,2}),(25[0-5]|2[0-4]\d|1\d{1,2}|\d{1,2})\)$
 

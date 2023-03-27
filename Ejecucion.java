@@ -32,7 +32,8 @@ public class Ejecucion {
             case 2: {
 
                 // No hay posibles errores al graficar linea o triangulo
-                System.out.println("Figura Circulo o linea");
+                System.out.println("Figura: Circulo o linea");
+                break;
             }
 
             // Triangulo
@@ -40,6 +41,7 @@ public class Ejecucion {
 
                 // Falta verificar que los puntos no se topen en el mismo eje
                 System.out.println("Triangulo");
+                break;
             }
 
             // Cuadrado o Rectangulo
@@ -76,6 +78,7 @@ public class Ejecucion {
                     System.err.println("Las cordenadas no generan correctamente ningula figura");
 
                 }
+                break;
 
             }
 
